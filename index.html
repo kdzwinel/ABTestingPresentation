@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>How to get from "we think" to "we know"? - A/B testing</title>
+
+		<meta name="description" content="Noone gets everything right from the start! All products should be constantly tested and optimized. Learn how to come up with ideas for improvements and how to verify them with your users.">
+		<meta name="author" content="Konrad Dzwinel">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/my.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h4>How to get from &#8220;we think&#8221; to &#8220;we know&#8221;?</h4>
+					<h1>A/B Testing</h1>
+					<p style="margin-top: 200px; opacity: 0.7;">
+						<small>Konrad Dzwinel &middot; <a href="http://twitter.com/kdzwinel">@kdzwinel</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello!</h2>
+				</section>
+
+                <section data-background="#e6e6e6">
+                    <img height="600" data-src="lib/img/brainly.png" alt="Brain.ly" class="bigshadow" />
+                </section>
+
+                <section data-background="#F4F4F4">
+                    <img height="300" data-src="lib/img/gde.svg" alt="Google Developer Expert" class="clean" />
+                </section>
+
+                <section>
+                    <h2>Noone gets everything right from the start!</h2>
+                </section>
+
+                <section>
+                    <h2>Improvements</h2>
+                    <ul>
+                        <li>adding new features</li>
+                        <li>removing features</li>
+                        <li>modifying layout</li>
+                        <li>experimenting with different colors and pictures</li>
+                        <li>changing headlines, descriptions, calls to action</li>
+                        <li>etc.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>How to generate ideas for improvements?</h2>
+                    <ul>
+                        <li>brainstorming</li>
+                        <li>looking at competitors</li>
+                        <li>analytics //link to google analytics</li>
+                        <li>pools //picture, link to hotjar</li>
+                        <li>meeting your target group //picture</li>
+                        <li>usability testing //link to usabilitytesting.com</li>
+                        <li>recording live users //link to appsee and hotjar</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>How to test your hypothesis?</h2>
+                </section>
+
+                <section>
+                    // explanation of A/B tests
+                </section>
+
+                <section>
+                    <h2>Getting reliable results</h2>
+                    <ul>
+                        <li>randomized</li>
+                        <li>consistent</li>
+                        <li>one test at the time</li>
+                        <li>2 weeks - two full cycles</li>
+                        <li>statistically significant</li>
+                    </ul>
+                </section>
+
+                <section>
+                    // calculator - https://gist.github.com/kdzwinel/201293d7e35981e87b40
+                </section>
+
+                <section>
+                    <h2>A/B testing tools</h2>
+                    <ul>
+                        <li>google content experiments</li>
+                        <li>optimizely</li>
+                        <li>kissmetrics</li>
+                        <li>amazon ab testing</li>
+                    </Ul>
+                </section>
+
+				<section style="text-align: left;">
+					<h1>Thanks!</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+                fragments: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
